@@ -4,12 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Work sans google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <!-- Tailwind and daisy UI  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="tailwind.config.js">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: '#E527B2',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+         .font-workSans {
+         
+          font-family: 'Work Sans', sans-serif;
+
+         }
+    </style>
 </head>
-<body>
-    <header></header>
+<body class="font-workSans">
+    <header>
+        <section class="bg-yellow-50 p-4">
+            
+                <div class="hero min-h-screen ">
+                    <div class=" flex flex-col lg:flex-row items-center gap-8 ">
+                      
+                      <div class="text-center">
+                        <h3 class="text-3xl font-medium">---SALE FEVER---</h1>
+                        <h2 class="text-3xl md:text-6xl font-bold mt-11 mb-20">Purchase TK 200 or <br> above & get <span class="text-primaryColor">20% off</span></h2>
+                        <div class="flex items-center gap-4  justify-center">
+                          <p class="text-2xl font-medium">Use Promo Code</p>
+                          <button class=" text-white bg-primaryColor text-2xl font-semibold rounded-lg py-4 px-6">SELL200</button>
+                        </div>
+                        
+                      </div>
+                      <div>
+                        <img src="/images/Summer 1.png" class=" " />
+                      </div>
+                    </div>
+                  </div>
+           
+        </section>
+        <section class="bg-[#F8F8F8]">
+          <div>
+              <h3 class="text-4xl font-semibold">Kitchenware</h3>
+              <div>
+                <!-- first card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2 class=" text-2xl font-semibold my-2"> K. Accessories </h2>
+                    <p class="text-xl font-normal text-gray-400"> <span> 39.00</span> TK</p>
+                   
+                  </div>
+                </div>
+                <!-- second card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2 class=" text-2xl font-semibold my-2"> K. Accessories </h2>
+                    <p class="text-xl font-normal text-gray-400"> <span> 25.00</span> TK</p>
+                   
+                  </div>
+                </div>
+                <!-- third card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <h2 class=" text-2xl font-semibold my-2"> Home Cooker </h2>
+                    <p class="text-xl font-normal text-gray-400"> <span> 49.00</span> TK</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-lg bg-white p-6">
+                <h3 class="text-2xl font-medium">Have coupon?</h3>
+                <div>
+                   <input type="text" class="border border-gray-200 p-4" placeholder="Coupon code">
+                   <button class="text-white bg-primaryColor text-xl font-semibold rounded-lg py-4 px-6">Apply</button>
+                </div>
+              </div>
+              <div>
+                 <p class="text-2xl font-medium">Total price: <span class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></p>
+                 <p>Discount : <span>0.00</span>TK</p>
+                 <p>Total: <span>0.00</span>TK</p>
+                 <div>
+                      <button class=" text-white bg-primaryColor text-xl font-semibold">Make Purchase</button>
+                </div>
+              </div>
+          </div>
+        </section>
+
+    </header>
     <main>
         <script src="./index.js"></script>
     </main>
