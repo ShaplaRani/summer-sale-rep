@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Summer Sale</title>
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Work sans google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,17 +35,17 @@
 </head>
 <body class="font-workSans">
     <header>
-        <section class="bg-yellow-50 p-4">
+        <section class="bg-yellow-50 py-20 px-3">
             
-                <div class="hero min-h-screen ">
-                    <div class=" flex flex-col lg:flex-row items-center gap-8 ">
+                <div class="w-10/12 m-auto ">
+                    <div class=" flex flex-col lg:flex-row items-center gap-8 justify-between ">
                       
                       <div class="text-center">
                         <h3 class="text-3xl font-medium">---SALE FEVER---</h1>
                         <h2 class="text-3xl md:text-6xl font-bold mt-11 mb-20">Purchase TK 200 or <br> above & get <span class="text-primaryColor">20% off</span></h2>
                         <div class="flex items-center gap-4  justify-center">
-                          <p class="text-2xl font-medium">Use Promo Code</p>
-                          <button class=" text-white bg-primaryColor text-2xl font-semibold rounded-lg py-4 px-6">SELL200</button>
+                          <p class="text-xl md:text-2xl font-medium">Use Promo Code</p>
+                          <button class=" text-white bg-primaryColor text-xl md:text-2xl font-semibold rounded-lg py-4 px-6">SELL200</button>
                         </div>
                         
                       </div>
@@ -54,86 +56,216 @@
                   </div>
            
         </section>
-        <section class="bg-[#F8F8F8]">
-          <div>
-              <h3 class="text-4xl font-semibold">Kitchenware</h3>
-              <div>
-                <!-- first card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                  <figure class="px-10 pt-10">
-                    <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <div class="rating">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    </div>
-                    <h2 class=" text-2xl font-semibold my-2"> K. Accessories </h2>
-                    <p class="text-xl font-normal text-gray-400"> <span> 39.00</span> TK</p>
+  </header>
+  <main>
+    <section class="bg-[#F8F8F8] ">
+      <div class="w-10/12 m-auto">
+              <h3 class="text-4xl font-semibold mb-8 pt-28 text-center md:text-left">Kitchenware</h3>
+          <!-- main container -->
+          
+          <div class="flex flex-col lg:flex-row gap-8">
+              <!-- first section -->
+              <div class="flex-1">
+                  <!-- first card container -->
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <!-- f card -->
+                  <div onclick="handleClick(this)" class=" bg-white p-5">
+                      <figure  class="bg-[#F8F8F8] py-6 flex justify-center text-center"><img  src="/images/prod1.png" alt="Shoes" /></figure>
+                      <div class=" mt-5 items-center text-center ">
+                        <div class="">
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-regular fa-star text-orange-400"></i>
+                          <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <h2 class=" text-2xl font-semibold my-2"> K. Accessories </h2>
+                        <p class="text-xl font-normal text-gray-400">39.00 TK</p>
+                      </div>
+                  </div>
+                   <!-- s card -->
+                   <div onclick="handleClick(this)" class=" bg-white p-5">
+                      <figure class="bg-[#F8F8F8] py-6 flex justify-center text-center"><img  src="/images/prod2.png" alt="Shoes" /></figure>
+                      <div class=" mt-5 items-center text-center ">
+                        <div class="">
+                          <i class="fa-regular fa-star text-orange-400"></i>
+                         <i class="fa-regular fa-star text-orange-400"></i>
+                         <i class="fa-regular fa-star text-orange-400"></i>
+                         <i class="fa-regular fa-star text-orange-400"></i>
+                         <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <h2 class=" text-xl font-semibold my-2"> K. Accessories </h2>
+                        <p class="text-xl font-normal text-gray-400">25.00 TK</p>
+                      </div>
+                   </div>
+                   <!-- t card -->
+                   <div onclick="handleClick(this)" class=" bg-white p-5">
+                      
+                      <figure class="bg-[#F8F8F8] py-6 flex justify-center text-center"><img  src="/images/prod3.png" alt="Shoes" /></figure>
+                      <div class=" mt-5 items-center text-center ">
+                        <div class="">
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                         <i class="fa-solid fa-star text-orange-400"></i>
+                         <i class="fa-solid fa-star text-orange-400"></i>
+                         <i class="fa-solid fa-star text-orange-400"></i>
+                         <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <h2 class=" text-xl font-semibold my-2"> Home Cooker </h2>
+                        <p class="text-xl font-normal text-gray-400">49.00 TK</p>
+                      </div>
+                  </div>
+                 </div>
+                 <h3 class="text-4xl font-semibold mt-14 mb-8 text-center md:text-left">Sportswear</h3>
+                 <!-- Second card container -->
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <!-- f card -->
+                  <div onclick="handleClick(this)" class=" bg-white p-5">
+                      <figure  class="bg-[#F8F8F8] py-6 flex justify-center text-center"><img  src="/images/prod4.png" alt="Shoes" /></figure>
+                      <div class=" mt-5 items-center text-center ">
+                        <div class="">
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                         <i class="fa-solid fa-star text-orange-400"></i>
+                         <i class="fa-regular fa-star text-orange-400"></i>
+                         <i class="fa-regular fa-star text-orange-400"></i>
+                         <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <h2 class=" text-xl font-semibold my-2"> Sports Back Cap </h2>
+                        <p class="text-xl font-normal text-gray-400">49.00 TK</p>
+                      </div>
+                  </div>
+                   <!-- s card -->
+                   <div onclick="handleClick(this)" class=" bg-white p-5">
+                      <figure class="bg-[#F8F8F8] py-6 flex justify-center text-center"><img  src="/images/prod5.png" alt="Shoes" /></figure>
+                      <div class=" mt-5 items-center text-center ">
+                        <div class="">
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <h2 class=" text-xl font-semibold my-2"> Full Jersey Set </h2>
+                        <p class="text-xl font-normal text-gray-400">69.00 TK</p>
+                      </div>
+                   </div>
+                   <!-- t card -->
+                   <div onclick="handleClick(this)" class=" bg-white p-5">
+                      <figure class="bg-[#F8F8F8] py-6 flex justify-center text-center"><img  src="/images/prod6.png" alt="Shoes" /></figure>
+                      <div class=" mt-5 items-center text-center ">
+                        <div class="">
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-regular fa-star text-orange-400"></i>
+                          <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <h2 class=" text-xl font-semibold my-2"> Sports cates </h2>
+                        <p class="text-xl font-normal text-gray-400">159.00 TK</p>
+                      </div>
+                  </div>
+                 </div>
+                 <h3 class="text-4xl font-semibold mt-14 mb-8 text-center md:text-left">Furniture</h3>
+                 <!-- third card container -->
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-14 lg:pb-36">
+                  <!-- f card -->
+                  <div onclick="handleClick(this)" class=" bg-white p-5">
+                      <figure  class="bg-[#F8F8F8] py-6 flex justify-center text-center"><img  src="/images/prod7.png" alt="Shoes" /></figure>
+                      <div class=" mt-5 items-center text-center ">
+                        <div class="">
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-regular fa-star text-orange-400"></i>
+                        </div>
+                        <h2 class=" text-xl font-semibold my-2"> Single Relax Chair </h2>
+                        <p class="text-xl font-normal text-gray-400">185.00 TK</p>
+                      </div>
+                  </div>
+                   <!-- s card -->
+                   <div onclick="handleClick(this)" class=" bg-white p-5">
+                      <figure class="bg-[#F8F8F8] py-6 flex justify-center text-center"><img  src="/images/prod8.png" alt="Shoes" /></figure>
+                      <div class=" mt-5 items-center text-center ">
+                        <div class="">
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          
+                        </div>
+                        <h2 class=" text-xl font-semibold my-2"> Children play </h2>
+                        <p class="text-xl font-normal text-gray-400">299.00 TK</p>
+                      </div>
+                   </div>
+                   <!-- t card -->
+                   <div onclick="handleClick(this)" class=" bg-white p-5">
+                      <figure class="bg-[#F8F8F8] py-6 flex justify-center text-center"><img  src="/images/prod9.png" alt="Shoes" /></figure>
+                      <div class=" mt-5 items-center text-center ">
+                        <div class="">
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                          <i class="fa-solid fa-star text-orange-400"></i>
+                        </div>
+                        <h2 class=" text-xl font-semibold my-2"> Flexible Sofa </h2>
+                        <p class="text-xl font-normal text-gray-400">339.00 TK</p>
+                      </div>
+                  </div>
+                 </div>
+                  
+  
+              </div>
+              <!-- second section -->
+              <div class="">
+                    <!-- first part-->
+                <div class="rounded-lg bg-white p-6">
+                  <h3 class="text-2xl font-medium mb-4">Have coupon?</h3>
+                  <div>
+                     <input id="coupon" type="text" class="border border-gray-200 p-4 w-7/12 rounded-s-lg" placeholder="Coupon code">
+                     <button id="apply-btn" class="text-white bg-primaryColor relative ml-[-3px] text-xl font-semibold rounded-e-lg py-4 px-6" disabled>Apply</button>
+                  </div>
+                 </div>
+                   <!-- second part -->
+                 <div class="rounded-lg bg-white p-6 mt-6 mb-20 lg:mb-6 pt-9">
+                  <div id="selected-item">
                    
                   </div>
-                </div>
-                <!-- second card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                  <figure class="px-10 pt-10">
-                    <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <div class="rating">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    </div>
-                    <h2 class=" text-2xl font-semibold my-2"> K. Accessories </h2>
-                    <p class="text-xl font-normal text-gray-400"> <span> 25.00</span> TK</p>
-                   
-                  </div>
-                </div>
-                <!-- third card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                  <figure class="px-10 pt-10">
-                    <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <div class="rating">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                    </div>
-                    <h2 class=" text-2xl font-semibold my-2"> Home Cooker </h2>
-                    <p class="text-xl font-normal text-gray-400"> <span> 49.00</span> TK</p>
-                   
-                  </div>
-                </div>
+                  <hr>
+                  <div>
+                     <p class="text-2xl font-medium mt-7">Total price: <span id ="total-price" class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></p>
+                     <p class="text-2xl font-medium my-6">Discount: <span id ="discount" class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></p>
+                     <p class="text-2xl font-medium mb-6">Total: <span id="total" class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></p>
+                   </div>
+                   <hr>
+                  <div class="mt-6">
+                      
+                   <button id="make-purchase" class=" text-white bg-primaryColor text-xl font-semibold w-full py-4 
+                   rounded-lg" disabled onclick="my_modal_1.showModal()">Make Purchase</button>
+                  <dialog id="my_modal_1" class=" modal ">
+   
+                <form method="dialog" class="modal-box text-center">
+                   <div class="flex justify-center mt-12">
+                     <img  src="images/congo.png" alt="">
+                   </div>
+                 <h3 class="font-bold text-5xl">Congratulations</h3>
+                <p class="py-4 text-xl font-normal">Your Purchase the product</p>
+                <div id="modal-btn" class="modal-action flex justify-center">
+                
+                 <input class=" py-4 mb-12 px-6 rounded-lg text-white text-xl font-semibold bg-primaryColor" type="button" value="Go Home" onclick="document.location.reload(true)">
+               
               </div>
-              <div class="rounded-lg bg-white p-6">
-                <h3 class="text-2xl font-medium">Have coupon?</h3>
-                <div>
-                   <input type="text" class="border border-gray-200 p-4" placeholder="Coupon code">
-                   <button class="text-white bg-primaryColor text-xl font-semibold rounded-lg py-4 px-6">Apply</button>
+              </form>
+              </dialog>
                 </div>
+               </div>
               </div>
-              <div>
-                 <p class="text-2xl font-medium">Total price: <span class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></p>
-                 <p>Discount : <span>0.00</span>TK</p>
-                 <p>Total: <span>0.00</span>TK</p>
-                 <div>
-                      <button class=" text-white bg-primaryColor text-xl font-semibold">Make Purchase</button>
-                </div>
-              </div>
-          </div>
-        </section>
-
-    </header>
-    <main>
-        <script src="./index.js"></script>
-    </main>
-</body>
+            </div>
+      </div>
+    </section>
+      
+  </main>     
+  <script src="./index.js"></script>      
+  </body>
 </html>
