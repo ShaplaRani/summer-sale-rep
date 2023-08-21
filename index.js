@@ -23,8 +23,8 @@
      
     const makePurchaseBtn = document.getElementById('make-purchase') 
      const applyBtn = document.getElementById('apply-btn')
-
-     if(totalPrice >= 0.00 ){
+     console.log(typeof totalPrice);
+     if(totalPrice > 0.00 ){
         makePurchaseBtn.removeAttribute('disabled')
      }
      else{
@@ -38,7 +38,7 @@
      else{
        applyBtn.setAttribute('disabled',true);
      }
-    // setDiscountValue(totalPrice)
+   
 }    
 
  document.getElementById('apply-btn').addEventListener('click',function(){
@@ -53,9 +53,20 @@
         document.getElementById('total').innerText = discountValue;
     }
     else{
-        alert('please write a SELL200')
+        alert('please insert valid coupon')
                 
     }
+})
+document.getElementById('modal-btn').addEventListener('click',function(){
+   document.getElementById('total-price').innerText = '0.00';
+   document.getElementById('total').innerText = '0.00';
+   document.getElementById('discount').innerText = '0.00';
+   document.getElementById('selected-item').innerHTML = '';
+   totalPrice = 0.00;
+   document.getElementById('make-purchase').setAttribute('disabled',true); 
+   document.getElementById('apply-btn').setAttribute('disabled',true);
+  
+    
 })
    
    
