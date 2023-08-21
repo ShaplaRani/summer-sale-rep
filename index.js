@@ -23,7 +23,7 @@
      
     const makePurchaseBtn = document.getElementById('make-purchase') 
      const applyBtn = document.getElementById('apply-btn')
-     console.log(typeof totalPrice);
+   
      if(totalPrice > 0.00 ){
         makePurchaseBtn.removeAttribute('disabled')
      }
