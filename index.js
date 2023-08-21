@@ -1,4 +1,4 @@
- let totalPrice = 0.00;
+ let totalPrice = 0.0000;
  function handleClick(target){
     const selectedItemContainer = document.getElementById('selected-item');
     
@@ -15,9 +15,9 @@
     `
     selectedItemContainer.appendChild(p)
 
-    const price = target.childNodes[3].childNodes[5].innerText.split(" ")[0];
+     const price = target.childNodes[3].childNodes[5].innerText.split(" ")[0];
      totalPrice = totalPrice + parseFloat(price);
-    
+      
       document.getElementById('total-price').innerText = totalPrice; 
       document.getElementById('total').innerText = totalPrice; 
      
@@ -44,8 +44,8 @@
  document.getElementById('apply-btn').addEventListener('click',function(){
             
     const coupon = document.getElementById('coupon');
-    const discount = (totalPrice * 20)/100;
-    const discountValue = totalPrice - discount;
+    const discount = ((totalPrice * 20)/100).toFixed(2);
+    const discountValue = (totalPrice - discount).toFixed(2);
     const couponValue = coupon.value ;
     coupon.value = '';
     if(couponValue === 'SELL200'){
